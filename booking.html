@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Book Ticket</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+<h2>Movie Ticket Booking</h2>
+
+
+<form action="confirm.php" method="POST">
+
+
+<label>Movie Name:</label>
+<select name="movie_name">
+<option>Avengers</option>
+<option>Inception</option>
+<option>Interstellar</option>
+</select>
+
+
+<label>Show Time:</label>
+<select name="show_time">
+<option>10:00 AM</option>
+<option>2:00 PM</option>
+<option>7:00 PM</option>
+</select>
+
+
+<label>Ticket Price:</label>
+<input type="number" id="price" name="ticket_price" value="200" readonly>
+
+
+<label>No. of Viewers:</label>
+<input type="number" id="viewers" name="viewers" min="1" value="1" oninput="calculateTotal()">
+
+
+<label>Your Name:</label>
+<input type="text" name="name" required>
+
+
+<label>Age:</label>
+<input type="number" name="age" required>
+
+
+<label>Gender:</label>
+<select name="gender">
+<option>Male</option>
+<option>Female</option>
+</select>
+
+
+<label>Mobile:</label>
+<input type="text" name="mobile" required>
+
+
+<h3>Total Amount: Rs.<span id="total">200</span></h3>
+<input type="hidden" name="total_amount" id="total_amount">
+
+
+<button type="submit" class="btn">Confirm</button>
+<button type="reset" class="btn cancel">Cancel</button>
+</form>
+
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Ticket</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+<h2>Movie Ticket Booking</h2>
+
+
+<form action="confirm.php" method="POST">
+
+
+<label>Movie Name:</label>
+<select name="movie_name">
+<option>Avengers</option>
+<option>Inception</option>
+<option>Interstellar</option>
+</select>
+
+
+<label>Show Time:</label>
+<select name="show_time">
+<option>10:00 AM</option>
+<option>2:00 PM</option>
+<option>7:00 PM</option>
+</select>
+
+
+<label>Ticket Price (per person):</label>
+<input type="number" id="price" name="ticket_price" value="200" readonly>
+
+
+<label>No. of Viewers:</label>
+<input type="number" id="viewers" name="viewers" min="1" value="1" oninput="generateViewers()">
+
+
+<div id="viewerDetails"></div>
+
+
+<h3>Total Amount: ₹<span id="total">200</span></h3>
+<input type="hidden" name="total_amount" id="total_amount">
+
+
+<button type="submit" class="btn">Confirm</button>
+<button type="reset" class="btn cancel">Cancel</button>
+</form>
+
+
+</body>
+</html>
